@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Instagram Clone
 
-## Getting Started
+This project is an Instagram clone, a social media platform inspired by the popular photo-sharing platform. It utilizes Next.js version 13 for frontend development and an external API for the backend.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- User registration
+- User login
+- Image uploading
+- User profiles
+- Following other users
+- Commenting and liking posts
+- Explore and discover new posts
+- Real-time notifications
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- React.js
+- Tailwind CSS
+- GraphQL
+- Apollo Client
+- Firebase (for authentication and image storage)
+- Socket.io (for real-time notifications)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Prerequisites
 
-## Learn More
+- Node.js (version 16.20.0)
+- npm (version 8.19.4)
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone this repository to your local machine:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   git clone https://github.com/carlosjmarq/Instagram-clone.git
 
-## Deploy on Vercel
+2. Navigate to the project directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   cd instagram-clone
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Install the dependencies:
+
+   npm install
+
+4. Set up the environment variables. Create a `.env.local` file in the root of the project and add the following variables:
+
+   NEXT_PUBLIC_API_URL=https://api.example.com
+   NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+
+5. Start the development server:
+
+   npm run dev
+
+6. Open your browser and visit `http://localhost:3000` to see the running application.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have any suggestions, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
+Feel free to customize the content of the `README.md` file according to your project's specific needs.
